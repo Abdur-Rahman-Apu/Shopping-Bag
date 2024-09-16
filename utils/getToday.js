@@ -18,11 +18,11 @@ const getToday = () => {
   const date = new Date();
 
   const year = date.getFullYear();
-  const month = months[date.getMonth() + 1];
+  const month = months[date.getMonth()];
   const day = date.getDate();
-  const week = weeks[date.getDay() + 1];
+  const week = weeks[date.getDay()];
 
-  return `${week}, ${day} ${month}, ${year}`;
+  return `${week}, ${day} ${month} ${year}`;
 };
 
 export default getToday;
