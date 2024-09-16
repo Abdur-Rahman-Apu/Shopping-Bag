@@ -160,9 +160,6 @@ header {
   font-family: "GT-Medium";
 }
 
-.shopping-list-container {
-}
-
 .shopping-list-container .item {
   display: flex;
   justify-content: space-between;
