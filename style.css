@@ -235,7 +235,17 @@ header {
   border: none;
   outline: none;
   padding: 10px;
+}
+
+.product-name-input-section,
+.product-price-input-section {
   margin-bottom: 25px;
+}
+
+.err-msg {
+  font-family: "GT-medium";
+  color: #fbc531;
+  margin-top: 5px;
 }
 
 .add-or-edit-product input[type="submit"] {
