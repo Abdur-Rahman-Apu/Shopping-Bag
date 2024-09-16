@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Bag</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,9 +20,50 @@
         </div>
         <div class="welcome-date">
             <p class="welcome-msg">Welcome Back!</p>
-            <span class="date-time"></span>
+            <p class="date-time">Wed, 16 Sept, 2024</p>
         </div>
     </header>
+
+    <main class="container">
+        <!-- Add or edit product  -->
+        <section class="add-or-edit-product">
+            <p>Product Information</p>
+            <form>
+                <div class="product-name-input-section">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" name="productName" id="product-name">
+                </div>
+                <div class="product-price-input-section">
+                    <label for="product-price">Product Price</label>
+                    <input type="text" name="productPrice" id="product-price">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="shopping-list">
+            <!-- shopping-list-header  -->
+            <div class="shopping-list-header">
+                <p>Shopping List</p>
+                <div class="search-product-by-name">
+                    <p>Search</p>
+                    <input type="text" name="searchProduct" id="search-product">
+                </div>
+            </div>
+
+            <!-- shopping-lists  -->
+            <div class="shopping-list-container">
+                <div class="item">
+                    <p>Product Name</p>
+                    <p>Product price</p>
+                    <div class="action">
+                        <button class="edit-btn"><i class="fas fa-edit"></i>Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash-alt"></i>Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="./index.js"></script>
 </body>

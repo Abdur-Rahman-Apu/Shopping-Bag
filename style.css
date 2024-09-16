@@ -5,12 +5,21 @@
 }
 
 @font-face {
-  font-family: GTBlack;
+  font-family: GT-Black;
   src: url("./assets/fonts/gt-walsheim-pro/GTWalsheimPro-Black.ttf");
+}
+@font-face {
+  font-family: GT-Regular;
+  src: url("./assets/fonts/gt-walsheim-pro/GTWalsheimPro-Regular.ttf");
+}
+@font-face {
+  font-family: GT-Bold;
+  src: url("./assets/fonts/gt-walsheim-pro/GTWalsheimPro-Bold.ttf");
 }
 
 body {
   height: 100vh;
+  background-color: #dfe4ea;
 }
 
 header {
@@ -24,7 +33,7 @@ header {
   align-items: center;
   gap: 20px;
   padding: 10px 45px;
-  font-family: GTBlack;
+  font-family: GT-Bold;
 }
 
 .title-img {
@@ -42,9 +51,26 @@ header {
   font-size: 1.3rem;
 }
 
+.welcome-date .date-time {
+  font-family: "GT-Bold";
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
 @media (min-width: 480px) {
 }
 @media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  .title-img {
+    flex-direction: row;
+  }
+
+  .title-img img {
+    width: 15%;
+  }
 }
 @media (min-width: 992px) {
 }
