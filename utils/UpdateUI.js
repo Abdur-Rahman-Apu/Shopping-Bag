@@ -1,15 +1,14 @@
+import { formSubmitBtn } from "../lib/HtmlElements/elements.js";
+
 const insertAdjacentHtml = (parent, newHtml, pos) => {
-  console.log(parent);
   parent.insertAdjacentHTML(pos, newHtml);
 };
 
 const setStyleIntoTheUI = (targetElm, newStyle) => {
-  console.log("Set style");
   Object.assign(targetElm.style, newStyle);
 };
 
 const removeHtmlElm = (elm) => {
-  console.log("remove elm");
   elm.remove();
 };
 
@@ -22,10 +21,25 @@ const setText = (elm, text) => {
   elm.textContent = text;
 };
 
+const updateFormSubmitButton = (value, isUpdate, id) => {
+  formSubmitBtn.value = value;
+  if (isUpdate) {
+    formSubmitBtn.setAttribute("update", isUpdate);
+    formSubmitBtn.setAttribute("productid", id);
+  } else {
+    formSubmitBtn.removeAttribute("update");
+    formSubmitBtn.removeAttribute("productid");
+    setStyleIntoTheUI(formSubmitBtn, {
+      backgroundColor: "var(--primary-color)",
+    });
+  }
+};
+
 export {
   insertAdjacentHtml,
   removeHtmlElm,
   setInputErrMsg,
   setStyleIntoTheUI,
   setText,
+  updateFormSubmitButton,
 };
