@@ -18,4 +18,14 @@ const setInputErrMsg = (parentElm, inputName) => {
   insertAdjacentHtml(parentElm, newHtml, "beforeend");
 };
 
-export { insertAdjacentHtml, removeHtmlElm, setInputErrMsg, setStyleIntoTheUI };
+const setText = (elm, text) => {
+  elm.textContent = text;
+};
+
+export {
+  insertAdjacentHtml,
+  removeHtmlElm,
+  setInputErrMsg,
+  setStyleIntoTheUI,
+  setText,
+};
