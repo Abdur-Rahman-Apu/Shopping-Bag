@@ -301,7 +301,7 @@ header {
   left: 50%;
   transform: translate(-50%, 0);
   width: 70%;
-  background-color: #60e04c;
+  /* background-color: ; */
   font-size: 1.2rem;
   font-family: "GT-medium";
   display: none;
@@ -345,6 +345,7 @@ header {
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: none;
 }
 
 .modal .overlay {
@@ -362,7 +363,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  background-color: #efcd70;
+  background-color: #7f8fa6;
   width: 80%;
   padding: 25px 15px;
   border-radius: 15px;
@@ -371,11 +372,13 @@ header {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  box-shadow: 3px 3px 3px #080808;
 }
 
 .modal-body p {
   font-size: 1.3rem;
   font-family: "GTC-medium";
+  color: #fff;
 }
 
 .modal-action {

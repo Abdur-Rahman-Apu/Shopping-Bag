@@ -1,4 +1,8 @@
-import { formSubmitBtn } from "../lib/HtmlElements/elements.js";
+import {
+  formSubmitBtn,
+  modalContainer,
+  modalOkBtn,
+} from "../lib/HtmlElements/elements.js";
 
 const insertAdjacentHtml = (parent, newHtml, pos) => {
   parent.insertAdjacentHTML(pos, newHtml);
@@ -23,6 +27,7 @@ const setText = (elm, text) => {
 
 const updateFormSubmitButton = (value, isUpdate, id) => {
   formSubmitBtn.value = value;
+
   if (isUpdate) {
     formSubmitBtn.setAttribute("update", isUpdate);
     formSubmitBtn.setAttribute("productid", id);
@@ -35,11 +40,22 @@ const updateFormSubmitButton = (value, isUpdate, id) => {
   }
 };
 
+const showModal = (mode, productId) => {
+  if (mode) {
+    setStyleIntoTheUI(modalContainer, { display: "block" });
+    modalOkBtn.setAttribute("productid", productId);
+  } else {
+    setStyleIntoTheUI(modalContainer, { display: "none" });
+    modalOkBtn.removeAttribute("productId");
+  }
+};
+
 export {
   insertAdjacentHtml,
   removeHtmlElm,
   setInputErrMsg,
   setStyleIntoTheUI,
   setText,
+  showModal,
   updateFormSubmitButton,
 };
