@@ -4,4 +4,6 @@ const isEndsWithSpace = (str) => str.endsWith(" ");
 
 const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
 
-export { capitalize, isEndsWithSpace, isStartWithSpace };
+const lowerCase = (str) => str.toLowerCase();
+
+export { capitalize, isEndsWithSpace, isStartWithSpace, lowerCase };
