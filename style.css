@@ -301,20 +301,25 @@ header {
   left: 50%;
   transform: translate(-50%, 0);
   width: 70%;
-  /* background-color: ; */
+  /* background-color: #60e04c; */
   font-size: 1.2rem;
   font-family: "GT-medium";
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   gap: 10px;
-  padding: 20px 0 0;
+
   border-radius: 7px;
   box-shadow: 3px 3px 3px #000;
   overflow: hidden;
 }
 
+.toast-msg-container .toast-msg-wrapper:nth-child(2n + 2) {
+  margin: 3px 0;
+}
+
+.toast-msg-wrapper,
 .toast-msg-box {
   display: flex;
   flex-direction: column;
@@ -322,6 +327,7 @@ header {
   align-items: center;
   width: 100%;
   gap: 10px;
+  padding: 10px 0 0;
 }
 
 .toast-msg-icon {
