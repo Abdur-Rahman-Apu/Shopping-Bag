@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Bag</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,9 +45,12 @@
 
             <!-- shopping-lists  -->
             <div class="shopping-list-container">
+
+                <!-- empty cart message  -->
                 <div class="no-shop-item"><img src="./assets/images/empty.png" alt="Image of indicating list empty">
                     <p>Your Cart is Empty</p>
                 </div>
+
             </div>
         </section>
 
@@ -54,15 +58,18 @@
         <section class="add-or-edit-product">
             <p class="add-or-edit-product-title">Product Information</p>
             <form autocomplete="off">
+                <!-- product name input  -->
                 <div class="product-name-input-section">
                     <label for="product-name">Product Name <span class="req-symbol">*</span></label>
                     <input type="text" name="productName" id="product-name">
-
                 </div>
+
+                <!-- product price input  -->
                 <div class="product-price-input-section">
                     <label for="product-price">Product Price <span class="req-symbol">*</span></label>
                     <input type="text" name="productPrice" id="product-price">
                 </div>
+
                 <input type="submit" value="Submit">
             </form>
         </section>
@@ -70,17 +77,10 @@
 
 
     <!-- toast message section  -->
-    <div class="toast-msg-container">
-        <!-- <div class="toast-life-line"></div> -->
-        <!-- <div class="toast-msg-wrapper">
-            <div class="toast-msg-box">
-                <p class="toast-msg-icon">✅</p>
-                <p class="toast-msg">Product Added Successfully</p>
-            </div>
-            <div class="toast-life-line"></div>
-        </div> -->
-    </div>
+    <div class="toast-msg-container"></div>
 
+
+    <!-- modal section  -->
     <div class="modal">
         <div class="overlay"></div>
         <div class="modal-body">
