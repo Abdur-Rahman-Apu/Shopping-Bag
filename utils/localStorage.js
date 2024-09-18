@@ -17,11 +17,7 @@ const setProductIntoLocalStorage = (product, isUpdate) => {
       return item;
     });
   } else {
-    const newProduct = {
-      id: products.length + 1,
-      ...product,
-    };
-    products = [...products, newProduct];
+    products = [...products, product];
   }
 
   setIntoLocalStorage("products", products);
