@@ -228,6 +228,18 @@ header {
   color: red;
 }
 
+.no-shop-item {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "GTC-medium";
+}
+.no-shop-item img {
+  width: 8vw;
+}
+
 /* add or edit section start  */
 
 .add-or-edit-product {
