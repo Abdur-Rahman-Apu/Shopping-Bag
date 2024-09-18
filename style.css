@@ -98,7 +98,7 @@ header {
 /* main section part start  */
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
   height: calc(100vh - 100px);
   padding: 15px 10px;
@@ -235,13 +235,13 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "GTC-medium";
+  font-size: 1.2rem;
 }
 .no-shop-item img {
-  width: 8vw;
+  width: 15vw;
 }
 
 /* add or edit section start  */
-
 .add-or-edit-product {
   background-color: var(--product-info-color);
   position: relative;
@@ -313,7 +313,6 @@ header {
   left: 50%;
   transform: translate(-50%, 0);
   width: 70%;
-  /* background-color: #60e04c; */
   font-size: 1.2rem;
   font-family: "GT-medium";
   display: flex;
@@ -321,7 +320,6 @@ header {
   justify-content: space-between;
   align-items: start;
   gap: 10px;
-
   border-radius: 7px;
   box-shadow: 3px 3px 3px #000;
   overflow: hidden;
@@ -432,11 +430,7 @@ header {
 .modal-action .no-btn:hover {
   box-shadow: none;
 }
-@keyframes lineVanish {
-}
 
-@media (min-width: 480px) {
-}
 @media (min-width: 768px) {
   header {
     flex-direction: row;
@@ -451,6 +445,10 @@ header {
 
   .shopping-list-container .item {
     border-radius: 20px;
+  }
+
+  .no-shop-item img {
+    width: 8vw;
   }
 
   .toast-msg-container {
@@ -473,6 +471,7 @@ header {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     flex-direction: row-reverse;
